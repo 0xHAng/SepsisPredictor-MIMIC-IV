@@ -10,9 +10,7 @@ This is a Transformer-based model for predicting the risk of shock and death in 
 ├── config.py              # Configuration file
 ├── model.py              # Model definition
 ├── parameter_search.py   # Parameter search
-├── utils.py              # Utility functions
-├── parameter_search_test_results.csv  # Parameter search results
-└── complete_data_and_labels/  # Dataset directory
+└── utils.py              # Utility functions
 ```
 
 ## Requirements
@@ -69,16 +67,11 @@ pip install -r requirements.txt
 ```
 
 2. Prepare data:
-- Place data files in the `complete_data_and_labels/` directory
+- Data From MIMIC-IV
 
-3. Run parameter search:
+3. Run parameter search to trian:
 ```bash
 python parameter_search.py
-```
-
-4. Train the model:
-```bash
-python train.py
 ```
 
 ## Notes
